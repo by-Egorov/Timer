@@ -34,7 +34,7 @@ function timer (seconds) {
   }, 1000)
 }
 
-// Вывод цифер таймера на экран
+// Вывод чисел таймера на экран
 function displayTimer (seconds) {
 
   const min = Math.floor(seconds / 60)
