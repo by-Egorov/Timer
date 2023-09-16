@@ -31,7 +31,7 @@ function timer (seconds) {
       return
     }
     displayTimer(secondLeft)
-  }, 500)
+  }, 1000)
 }
 
 // Вывод цифер таймера на экран
