@@ -35,15 +35,18 @@ function timer (seconds) {
 }
 
 // Вывод цифер таймера на экран
-function displayTimer(seconds) {
+function displayTimer (seconds) {
 
   const min = Math.floor(seconds / 60)
   const sec = seconds % 60
 
+  // Получаем целые минуты/секунды
   minuteTens.innerHTML = Math.floor(min / 10)
+  secondTens.innerHTML = Math.floor(sec / 10)
+
+  // Получаем десятые минуты/секунды
   minute.innerHTML = Math.floor(min % 10)
-  secondTens.innerHTML =Math.floor(sec / 10)
-  second.innerHTML = Math.floor(sec  % 10)
+  second.innerHTML = Math.floor(sec % 10)
 
   console.log({ min, sec })
 }
