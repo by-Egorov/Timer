@@ -26,6 +26,7 @@ function timer(seconds) {
 		if (secondLeft < 0) {
 			// Когда таймер закончится звуковое оповещение
 			audioAlert.play()
+			timerInput.value = ''
 			return
 		}
 		displayTimer(secondLeft)
@@ -38,10 +39,9 @@ function displayTimer(seconds) {
 	const sec = seconds % 60
 
 	let minuteTens = Math.floor(min / 10)
-  let minute = Math.floor(min % 10)
+	let minute = Math.floor(min % 10)
 	let secondTens = Math.floor(sec / 10)
 	let second = Math.floor(sec % 10)
-
 
 	document.getElementById('min-tens').innerHTML = minuteTens
 	document.getElementById('min').innerHTML = minute
